@@ -1,0 +1,65 @@
+/* Sidebar container */
+.sidebar {
+    width: 250px;
+    background-color: #f5f5dc; /* Beige background */
+    color: #333;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Sidebar heading */
+.sidebar h2 {
+    font-size: 24px;
+    color: #d2691e; /* Orange-brown heading */
+    margin-bottom: 20px;
+}
+
+/* Sidebar list */
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Sidebar buttons */
+.sidebar ul li button {
+    width: 100%;
+    background-color: #fff5e1; /* Light orange-beige button */
+    border: none;
+    color: #333;
+    text-align: left;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar ul li button i {
+    margin-right: 10px;
+    color: #ff8c00; /* Orange icon */
+}
+
+/* Hover effect */
+.sidebar ul li button:hover {
+    background-color: #ffe4b5; /* Moccasin */
+    color: #000;
+}
+
+/* Disabled/hidden buttons */
+.sidebar ul li button[style*="display:none"] {
+    display: none !important;
+}
+
+.sidebar ul li button[style*="pointer-events: none"] {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
